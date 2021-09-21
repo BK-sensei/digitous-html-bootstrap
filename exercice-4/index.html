@@ -74,22 +74,31 @@
 
 
     <!-- Bonus 3 -->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+    <div class="d-flex justify-content-around">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Signup Newsletter
+            </button>
+          
+            <!-- modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Email</span>
+                            <input type="text" class="form-control" placeholder="ex: lala@land.com" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <button type="button" class="btn btn-primary">S'abonner</button>
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="modal-body">
-              Show a second modal and hide this one with the button below.
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
 
 
     <!-- SECTION TEXTES -->
